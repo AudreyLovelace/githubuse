@@ -113,3 +113,15 @@ ul {
 #li1 {
   opacity: 0;
 }
+
+p {
+  font-size: 16px;
+  display: block;
+  width: 1000px;
+  position: relative;
+  left: -480px;
+  top: 100px;
+}
+p a {
+  color: rgb(64, 160, 224);
+}
