@@ -37,6 +37,9 @@ function nowDate() {
 
 function showWeather(response) {
   let temperature = Math.round(response.data.main.temp);
+  if ((temperature < 10) & (temperature > -10)) {
+    temperature = `0${temperature}`;
+  }
   h3.innerHTML = response.data.weather[0].description;
   h4.innerHTML = temperature;
   h1.innerHTML = response.data.name;
